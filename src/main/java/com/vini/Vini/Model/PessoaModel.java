@@ -8,8 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity (name = "PESSOA")
 @Table(name = "TB_PESSOA")
-
-public class PessoaModel extends Serializable{
+public class PessoaModel{
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
@@ -29,13 +28,12 @@ public class PessoaModel extends Serializable{
 		return nome;
 	}
 	
-
-	public String getId() {
-		return id;
-	}
-	
 	public void setId (Long id) {
 		this.id = id;
+	}
+	
+	public Long getId() {
+		return id;
 	}
 	
 }
