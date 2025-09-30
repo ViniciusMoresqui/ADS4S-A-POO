@@ -26,7 +26,7 @@ public class PessoaService {
         return this.pessoaRepository.save(pessoaModel);
     }
 
-    public void deletarPessoa(Long id) {
+    public void deletePessoa(Long id) {
         this.pessoaRepository.deleteById(id);
     }
 

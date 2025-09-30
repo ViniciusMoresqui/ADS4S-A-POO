@@ -29,8 +29,8 @@ public class PessoaController {
         return this.pessoaService.salvarPessoa(pessoaModel);
     }
 
-    @DeleteMapping("/{id}/delete")
+    @DeleteMapping("/{id}")
     public void deletePessoa(@PathVariable Long id) {
-        this.pessoaService.deletarPessoa(id);
+        this.pessoaService.deletePessoa(id);
     }
 }
